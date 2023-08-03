@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
-import dotenv from "dotenv";
 import data from "./crawled_data.json" assert { type: "json" };
 
 dotenv.config();
