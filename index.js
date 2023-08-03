@@ -21,8 +21,10 @@ app.use(limiter);
 app.get("/", (req, res) => {
   res.send({
     Title: "Specialized vocabulary in information technology",
-    Get_all_words: "http://localhost:3000/get-all-words",
-    Get_word: "http://localhost:3000/get-word-detail/:word",
+    Get_all_words:
+      "https://specialized-vocabolary-in-it.onrender.com/get-all-words",
+    Get_word:
+      "https://specialized-vocabolary-in-it.onrender.com/get-word-detail/:word",
     Source: "https://www.dictionary4it.com/term/",
   });
 });
