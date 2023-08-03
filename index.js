@@ -3,8 +3,6 @@ import cors from "cors";
 import rateLimit from "express-rate-limit";
 import data from "./crawled_data.json" assert { type: "json" };
 
-dotenv.config();
-
 const app = express();
 
 const limiter = rateLimit({
