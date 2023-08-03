@@ -1,7 +1,10 @@
 import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
-import data from "./crawled_data.json" assert { type: "json" };
+import { readFile } from "fs/promises";
+const data = JSON.parse(
+  await readFile(new URL("./crawled_data.json", import.meta.url))
+);
 
 const app = express();
 
